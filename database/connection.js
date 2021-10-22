@@ -8,7 +8,7 @@ let connectDB = async ()=>{
         })
     }
   catch{
-      console.log('dATA BASE WAS NOT CONNECTED')
+      console.log('DATA BASE WAS NOT CONNECTED')
   }
 }
 const db = mongoose.connection

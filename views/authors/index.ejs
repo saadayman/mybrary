@@ -9,5 +9,8 @@
 <% for(i=0;i<authors.length;i++){ %>
   
     <li><%= authors[i].name  %> </li>
+    <a href="/authors/<%= authors[i].id%>">View</a>
+    <a href="/authors/<%= authors[i].id%>/edit">Edit</a>
+  <%- include('../partials/deleteForm.ejs',{url:`/authors/${authors[i].id}`})%> 
     <% } %> 
     </ul>
